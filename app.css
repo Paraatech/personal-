@@ -1,0 +1,161 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+header .nav-links li {
+    margin: 0 15px;
+}
+
+header .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    margin-top: 30px;
+}
+
+.hero h2 {
+    font-size: 32px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill {
+    width: 30%;
+    text-align: center;
+}
+
+.skill-bar {
+    height: 10px;
+    margin-top: 10px;
+    background-color: #0f0d0d;
+}
+
+.skill-bar.html {
+    width: 90%;
+    background-color: #f16529;
+}
+
+.skill-bar.css {
+    width: 80%;
+    background-color: #264de4;
+}
+
+.skill-bar.javascript {
+    width: 60%;
+    background-color: #f7df1e;
+}
+
+.portfolio-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #080707;
+    border-radius: 5px;
+}
+
+#contactForm button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #0c0909;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .skills-list, .portfolio-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .portfolio-item {
+        width: 80%;
+        margin: 10px 0;
+    }
+}

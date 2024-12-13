@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personal Website</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Paras</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h2>Welcome to My Personal Website</h2>
+            <p>Let me tell you a little bit about myself!</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-title">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <p>Hello! I'm Your Name, a passionate web developer who loves creating beautiful and functional websites. I have experience with HTML, CSS, JavaScript, and more!</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-title">
+            <h2>My Skills</h2>
+        </div>
+        <div class="skills-list">
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>90%</p>
+                <div class="skill-bar html"></div>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>80%</p>
+                <div class="skill-bar css"></div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>60%</p>
+                <div class="skill-bar javascript"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="section-title">
+            <h2>Portfolio</h2>
+        </div>
+        <div class="portfolio-gallery">
+            <div class="portfolio-item">
+                <img src="./assests/img/IMG_0424.JPG" alt="Portfolio Project 1">
+                <p>Project 1</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="./assests/img/WhatsApp Image 2024-12-01 at 8.34.41 PM.jpeg" alt="Portfolio Project 2">
+                <p>Project 2</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="./assests/img/IMG_0424.JPG" alt="Portfolio Project 3">
+                <p>Project 3</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-title">
+            <h2>Contact Me</h2>
+        </div>
+        <form id="contactForm" onsubmit="return sendMessage()">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="web.js"></script>
+</body>
+</html>
